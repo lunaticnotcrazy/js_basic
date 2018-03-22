@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    操作数组的方法 以及 类数组对象转数组
+</div>
+<script>
+    var testArr = [1,2,3];
+    console.log(testArr.slice(1));// [2,3]
+    // slice(start,end) end 没有的输入 从start索引截取到结尾 slice 返回新的数组
+
+    console.log(testArr.splice(1, 1, 3)); // [2]
+    console.log(testArr);  // [1,3,3] splice 返回被删除元素数组 同时对原数组 进行操作
+
+    // 能将类数组对象转换的 方法 有length
+    var testObj = {
+        "0":"ll",
+        "1":"ll1",
+        "length" : 2
+    };
+    var testObj1 = {
+        "0":"ll",
+        "1":"ll1",
+        "length" : 2
+    };
+    console.log(Array.prototype.slice.call(testObj));
+    console.log(Array.prototype.splice.call(testObj,0)); // 加0 testObj 为空 length : 0
+    console.log(testObj); //{length:0}
+    console.log(Array.from(testObj));  // es6
+    console.log(Array.prototype.concat.apply([],testObj1));
+</script>
+</body>
+</html>

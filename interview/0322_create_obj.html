@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    创建对象的多种方法及优缺点
+</div>
+<script>
+    // 工厂模式
+    function createObj(name) {
+        var o = new Object();
+        o.name = name;
+        o.getName = function () {
+            return this.name
+        };
+        return o
+    }
+    var person1 = createObj('ll');
+    var person2 = createObj('ll1');
+    console.log(person1.getName());
+    // 工厂模式适用的应用场景 的理解
+    // 。。。
+    
+    // 构造模式
+    function createObj1(name) {
+        this.name = name;
+        this.getName = function () {
+            return this.name
+        }
+    }
+    var person1 = new createObj1('ll');
+
+
+    // 构造优化
+
+    function createObj2(name) {
+        this.name = name;
+        this.getName = getName
+    }
+    function getName() {
+        return this.name
+    }
+    var person2 = new createObj2('ll');
+
+    // 原型模式
+    function createObj3() {
+
+    }
+    createObj3.prototype.name = 'll';
+    createObj3.prototype.getName = function () {
+        return this.name
+    }
+
+    // 原型模式优化
+
+    function createObj4() {
+
+    }
+    createObj4.prototype = {
+        name : 'll',
+        getName:function () {
+            return this.name
+        }
+    }
+
+    // 原型继续优化
+    function createObj5() {
+
+    }
+    createObj5.prototype = {
+        constructor : createObj,
+        name : 'll',
+        getName : function () {
+            return this.name
+        }
+    }
+
+    // 组合模式 构造 加 原型
+
+    // 缺应用场景 待续 ... 18.03.22 
+</script>
+</body>
+</html>

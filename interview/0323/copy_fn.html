@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    深浅拷贝
+</div>
+<script>
+    function shallowCopy(src) {
+        var dst = {};
+        for (var prop in src) {
+            if (src.hasOwnProperty(prop)) {
+                dst[prop] = src[prop];
+            }
+        }
+        return dst;
+    }
+    var testArr = {
+        "a" : {
+            "aa" : 1,
+        },
+        "b" : 1
+    };
+
+    var deepCp = function(){
+        var len = arguments.length;
+        var target = arguments[0]||{};
+        var i = 1,key;
+        if (typeof target !== "object"&&typeof target !== "function") {
+            target = {}
+        }
+//        if(i==len){//给本身或者实例扩展
+//            target = this;
+//            i--
+//        }
+        for(;i<len;i++){
+            for(key in arguments[i]){//遍历对象:arg2之后
+                if(typeof arguments[i][key] == "object" || typeof arguments[i][key] == "function"){
+                    if(Object.prototype.toString.call(arguments[i][key]) === '[object Object]'){
+                        target[key] = {}
+                    }else if(Object.prototype.toString.call(arguments[i][key]) === '[object Array]'){
+                        target[key] = []
+                    }else{
+                        target[key] = {}
+                    }
+                    deepCp(target[key],arguments[i][key])
+                }else{
+                    target[key] = arguments[i][key]
+                }
+            }
+        }
+        return target
+    };
+    var ret = {};
+    deepCp(ret,testArr);
+    testArr.a.aa = 2; 
+    console.log(ret);
+
+</script>
+</body>
+</html>

@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dd870f18-3682-4a81-9b46-dfb442e613c9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/interview/0322.html" afterPath="$PROJECT_DIR$/interview/0322/0322.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/interview/0322_arguments.html" afterPath="$PROJECT_DIR$/interview/0322/0322_arguments.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/interview/0322_array_fn.html" afterPath="$PROJECT_DIR$/interview/0322/0322_array_fn.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/interview/0322_create_obj.html" afterPath="$PROJECT_DIR$/interview/0322/0322_create_obj.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interview/0323/string_fn.html" afterPath="$PROJECT_DIR$/interview/0323/string_fn.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +18,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="string_fn.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="string_fn.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interview/0323/string_fn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="483">
+              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="copy_fn.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interview/0323/copy_fn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="632">
+              <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -52,6 +59,7 @@
         <option value="$PROJECT_DIR$/interview/0322_arguments.html" />
         <option value="$PROJECT_DIR$/interview/0322_create_obj.html" />
         <option value="$PROJECT_DIR$/interview/0323/string_fn.html" />
+        <option value="$PROJECT_DIR$/interview/0323/copy_fn.html" />
       </list>
     </option>
   </component>
@@ -217,12 +225,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521695016836</updated>
       <workItem from="1521695018166" duration="9082000" />
-      <workItem from="1521767785036" duration="2272000" />
+      <workItem from="1521767785036" duration="3039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11354000" />
+    <option name="totallyTimeSpent" value="12121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -335,8 +343,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interview/0323/string_fn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        <state relative-caret-position="483">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interview/0323/copy_fn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
           <folding />
         </state>
       </provider>

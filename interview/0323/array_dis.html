@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var testArr = ['2018-03-05', '2013-06-12', '2019-03-12', '2018-03-05', '2014-02-22'];
+    function distinct(arr) {
+        var len = arr.length;
+        var set = [];
+        var obj = {};
+        for (var i = 0; i < len; i++) {
+//            if (set.indexOf(arr[i]) == '-1') {
+//                set.push(arr[i])
+//            }
+            if (!obj[arr[i]]) {
+                set.push(arr[i]);
+                obj[arr[i]] = 1
+            }
+        }
+        return set
+    }
+ 
+    console.log(distinct(testArr));
+</script>
+</body>
+</html>

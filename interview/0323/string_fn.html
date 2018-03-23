@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    字符串方法
+</div>
+<script>
+    var testStr = 'string';
+//    substring slice substr
+    console.log(testStr.substring(2, 3)); // r substring(start,end) 获取 子字符串 原字符串 不变 start 比 end 会 先改变start end位置
+    // 同时不接受负数
+
+    console.log(testStr.slice(2,-1)); //rin slice 接受
+    console.log(testStr.slice(-1)); //g rin slice 接受 负数 从结尾开始
+
+    console.log(testStr.substr(3)); // ing 一个参数 从开始截取到结尾
+    console.log(testStr.substr(1,3)); // tri
+</script> 
+</body>
+</html>
